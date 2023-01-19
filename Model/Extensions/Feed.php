@@ -58,6 +58,7 @@ class Feed
      */
     public function getExtensionFeed()
     {
+        return [];
         if (!$this->versions) {
             try {
                 $this->curl->get(self::API_RESOURCE);
